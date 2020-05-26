@@ -17,6 +17,7 @@ public class ReverseInteger extends TestCase {
         
         while(x / 10.0 > 0) {
             int tmp = x % 10;
+            // 判断是否溢出
             if(sign && num > ((Integer.MAX_VALUE - tmp) / 10 )) {
                 num = 0;
                 break;
