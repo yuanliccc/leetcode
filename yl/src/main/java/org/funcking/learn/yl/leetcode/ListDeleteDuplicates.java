@@ -20,7 +20,7 @@ import java.util.HashMap;
 public class ListDeleteDuplicates extends TestCase {
     public ListNode deleteDuplicates(ListNode head) {
         if(head == null) {
-            return head;
+            return null;
         }
         ListNode pointer = head;
         
