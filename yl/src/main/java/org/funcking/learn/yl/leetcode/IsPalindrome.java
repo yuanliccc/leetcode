@@ -21,7 +21,7 @@ public class IsPalindrome extends TestCase {
     
     public boolean isPalindrome(String s) {
         
-        if(s == null || "".equals(s)) {
+        if(s == null) {
             return false;
         }
         
@@ -29,11 +29,11 @@ public class IsPalindrome extends TestCase {
         int right = s.length() - 1;
         
         while(left < right) {
-            while(left < right && !isNot(s.charAt(left))) {
+            while(left < right && !is(s.charAt(left))) {
                 left++;
             }
             
-            while(right > left && !isNot(s.charAt(right))) {
+            while(right > left && !is(s.charAt(right))) {
                 right--;
             }
             
@@ -87,7 +87,7 @@ public class IsPalindrome extends TestCase {
     }
     
     
-    private boolean isNot(char c) {
+    private boolean is(char c) {
         return (c >= 'A' && c <= 'Z') ||
                 (c >= 'a' && c <= 'z') ||
                 (c >= '0' && c <= '9');
