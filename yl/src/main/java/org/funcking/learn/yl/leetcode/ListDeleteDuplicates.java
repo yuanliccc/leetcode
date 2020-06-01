@@ -3,8 +3,6 @@ package org.funcking.learn.yl.leetcode;
 import junit.framework.TestCase;
 import org.funcking.learn.yl.ListNode;
 
-import java.util.HashMap;
-
 /**
  * 83. 删除排序链表中的重复元素
  * 给定一个排序链表，删除所有重复的元素，使得每个元素只出现一次。
@@ -22,6 +20,7 @@ public class ListDeleteDuplicates extends TestCase {
         if(head == null) {
             return null;
         }
+        
         ListNode pointer = head;
         
         while(pointer.next != null) {
